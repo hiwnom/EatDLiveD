@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ApiController;
+use App\Http\Controllers\AuthController;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -13,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-use App\Http\Controllers\AuthController;
 
 Route::post("/register", [AuthController::class, "register"]);
 Route::post("/login", [AuthController::class, "login"]);
+
+Route::post("/addMeal", [ApiController::class, 'addMeal']);
 
 Route::group([
     "middleware" => ["auth:api"]

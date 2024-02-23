@@ -44,10 +44,8 @@ class AuthController extends Controller
             "password" => "required"
         ]);
 
-        
 
-        // Auth Facade
-        
+        // Auth Facade        
         if(Auth::attempt([
             "email" => $request->email,
             "password" => $request->password
