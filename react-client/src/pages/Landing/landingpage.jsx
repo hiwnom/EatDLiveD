@@ -7,22 +7,18 @@ export const Landing = () => {
       <div>
         <Navbar />
       </div>
-
       <div className="scroll-1">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-6 pt-10 text-4xl font-semibold pl-10 fontcolor-secondary">
+        <div className="grid grid-rows-4 grid-cols-1 firstpage">
+          <div className="row text-4xl font-semibold fontcolor-secondary">
             อยากดูแลสุขภาพ แต่ไม่รู้จะเริ่มอย่างไร
           </div>
-          <div className="col row-span-10 col-span-6">
-            <img src="src/assets/human1.svg" className="h-25" />
-          </div>
-          <div className="col col-span-6 text-8xl font-bold pl-10 fontcolor-primary">
+          <div className="row text-8xl font-bold fontcolor-primary pt-1">
             " กินดีอยู่ดี "
           </div>
-          <div className="col col-span-6 text-2xl font-semibold pl-10 fontcolor-secondary">
+          <div className="row text-2xl font-semibold fontcolor-secondary pt-10">
             ตัวช่วยที่จะวางแผนมื้ออาหารให้คุณครบจบในที่เดียว
           </div>
-          <div className="col col-span-6 pl-10 pt-10">
+          <div className="row">
             <a href="#">
               <button className="btn btn-start text-3xl">
                 START TO DAY
@@ -45,21 +41,24 @@ export const Landing = () => {
       </div>
 
       <div className="scroll-2">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-5 row-span-9">
+        <div className="grid grid-cols-2">
+          <div className="col">
             <img src="src/assets/human2.svg" className="h-30" />
           </div>
-          <div className="col col-span-6 pt-20 pl-10 fontcolor-white text-4xl">
-            กินดีอยู่ดี คืออะไร ?
-          </div>
-          <div className="col col-span-6 pl-10 fontcolor-white text-2xl">
-            <p className="leading-loose">
-              Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. PageMaker
-              including versions of Lorem Ipsum.
-            </p>
+          <div className="col pl-10 pt-20 fontcolor-white text-4xl">
+            <div className="grid grid-cols-1">
+              <div className="row">กินดีอยู่ดี คืออะไร ?</div>
+              <div className="row fontcolor-white text-2xl">
+                <p className="leading-loose">
+                  Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  ever since the 1500s, when an unknown printer took a galley of
+                  type and scrambled it to make a type specimen book. PageMaker
+                  including versions of Lorem Ipsum.
+                </p>
+            </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -78,11 +77,10 @@ export const Landing = () => {
             ได้เลย
           </div>
         </div>
-      </div>
 
-      <div className="scroll-3-1">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-4">
+        <div className="scroll-3-1">
+        <div className="grid">
+          <div className="col col-center">
             <div className="boxland drop1">
               <div className="step3 iconh">
                 <div className="iconsize" align="center">
@@ -97,7 +95,7 @@ export const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="col col-span-4">
+          <div className="col col-center">
             <div className="boxland drop1">
               <div className="step3 iconh">
                 <div className="iconsize" align="center">
@@ -113,7 +111,7 @@ export const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="col col-span-4">
+          <div className="col col-center">
             <div className="boxland drop1">
               <div className="step3 iconh">
                 <div className="iconsize" align="center">
@@ -130,74 +128,83 @@ export const Landing = () => {
           </div>
         </div>
       </div>
+      </div>
+
+     
 
       <div className="scroll-4">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-12 text-4xl text-center fontcolor-primary">
+        <div className="grid">
+          <div className="col col-center text-4xl text-center fontcolor-primary">
             มากกว่าการวางแผนคือการใส่ใจ
           </div>
         </div>
-      </div>
-
-      <div className="scroll-4-1">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-3 ">
-            <div className="step3 iconh">
-              <div className="iconsize" align="center">
-                <img src="src/assets/fe1.svg" alt="Step 1" />
+        <div className="scroll-4-1">
+        <div className="grid">
+          
+          <div className="col col-center">
+            <div className="grid grid-rows-2 grid-cols-1">
+              <div className="row col-center">
+                <img src="src/assets/fe1.svg" alt="Step 1" className="iconh"/>
               </div>
-            </div>
-            <div className="step3 text-center text-2xl pt-20 fontcolor-secondary">
-              Login
-            </div>
-          </div>
-          <div className="col col-span-3">
-            <div className="step3 iconh">
-              <div className="iconsize" align="center">
-                <img src="src/assets/fe2.svg" alt="Step 1" />
+              <div className="row text-center text-2xl fontcolor-secondary pt-5">
+                Login
               </div>
-            </div>
-            <div className="step3 text-center text-2xl pt-20 fontcolor-secondary">
-              Login
-            </div>
-          </div>
-          <div className="col col-span-3">
-            <div className="step3 iconh">
-              <div className="iconsize" align="center">
-                <img src="src/assets/fe3.svg" alt="Step 1" />
-              </div>
-            </div>
-            <div className="step3 text-center text-2xl pt-20 fontcolor-secondary">
-              Login
-            </div>
-          </div>
-          <div className="col col-span-3">
-            <div className="step3 iconh">
-              <div className="iconsize" align="center">
-                <img src="src/assets/fe4.svg" alt="Step 1" />
-              </div>
-            </div>
-            <div className="step3 text-center text-2xl pt-20 fontcolor-secondary">
-              Login
             </div>
           </div>
 
+          <div className="col col-center">
+            <div className="grid grid-rows-2 grid-cols-1">
+              <div className="row col-center">
+                <img src="src/assets/fe2.svg" alt="Step 2" className="iconh"/>
+              </div>
+              <div className="row text-center text-2xl fontcolor-secondary pt-5">
+                Login
+              </div>
+            </div>
+          </div>
+          
+          <div className="col col-center">
+            <div className="grid grid-rows-2 grid-cols-1">
+              <div className="row col-center">
+                <img src="src/assets/fe3.svg" alt="Step 3" className="iconh"/>
+              </div>
+              <div className="row text-center text-2xl fontcolor-secondary pt-5">
+                Login
+              </div>
+            </div>
+          </div>
+
+          <div className="col col-center">
+            <div className="grid grid-rows-2 grid-cols-1">
+              <div className="row col-center">
+                <img src="src/assets/fe4.svg" alt="Step 4" className="iconh"/>
+              </div>
+              <div className="row text-center text-2xl fontcolor-secondar pt-5">
+                Login
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
+      </div>
+
+      
 
       <div className="scroll-5">
-        <div className="grid grid-cols-12">
-          <div className="col col-span-5 row-span-3">
+        <div className="grid grid-cols-2 grid-rows-3">
+          <div className="col row-span-3">
             <img src="src/assets/twohuman.svg"  className="h-500" />
           </div>
-          <div></div>
-          <div className="col col-span-7 text-4xl  fontcolor-secondary-2 pt-0">
+          <div className="col text-4xl  fontcolor-secondary-2 pt-10">
             The unseen of spending three years at Pixelgrade
-            <p className="col col-span-7 text-base fontcolor-secondary font-thin leading-loose pt-10">
+          </div>
+          <div className="col text-4xl  fontcolor-secondary-2 pt-0">
+            <p className="col text-base fontcolor-secondary font-thin leading-loose">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
             </p>
           </div>
-          <div>
+          <div className="col">
             <a href=""><button className="btn btn-success">Learn More</button></a>
           </div>
         </div>

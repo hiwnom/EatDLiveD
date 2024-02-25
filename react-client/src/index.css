@@ -6,13 +6,6 @@
 
 body {
   font-family: "Kanit";
-  width: fit-content;
-  height: auto;
-  background-image: url('src/assets/LANDINGPAGE-Desktop.svg');
-  /* ใส่ลิงก์รูปภาพของคุณ */
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-y: auto;
 }
 
 .navbar {
