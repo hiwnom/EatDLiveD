@@ -1,0 +1,9 @@
+.nav-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.flex-items {
+    padding: 5px 0px;
+}

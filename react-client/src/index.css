@@ -1,68 +1,114 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* index.css */
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Kanit";
+  width: fit-content;
+  height: auto;
+  background-image: url('src/assets/LANDINGPAGE-Desktop.svg');
+  /* ใส่ลิงก์รูปภาพของคุณ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.navbar {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.drop1 {
+  box-shadow: -20px 20px 100px rgba(27, 32, 04, 0.15);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+.btn-success {
+  background: #53D257;
+  border: 0;
+  color: white;
+  width: 120px;
+  border-radius: 20px;
+}
+
+.btn-outline {
+  border: 0px;
+  background: white;
+  color: #53D257;
+  width: 120px;
+  border-radius: 20px;
+}
+
+.btn-start {
+  border: 0;
+  background-color: white;
+  color: #4DC247;
+  border-radius: 50px;
+  width: 300px;
+  height: 65px;
+}
+
+.btn-start:hover {
+  border: 0;
+  background: #4DC247;
+  color: white;
+}
+
+
+@media screen and (max-width: 400px) {
+  .text-2xl {
+    font-size: 0.25rem;
+    /* ลดขนาดตัวอักษรให้เหมาะสมกับหน้าจอขนาดเล็กขึ้น */
   }
-  a:hover {
-    color: #747bff;
+
+  .text-3xl {
+    font-size: 0.35rem;
+    /* ลดขนาดตัวอักษรให้เหมาะสมกับหน้าจอขนาดเล็กขึ้น */
   }
-  button {
-    background-color: #f9f9f9;
+
+  .text-4xl {
+    font-size: 0.5rem;
+    /* ลดขนาดตัวอักษรให้เหมาะสมกับหน้าจอขนาดเล็กขึ้น */
   }
+
+  .text-8xl {
+    font-size: 1rem;
+    /* ลดขนาดตัวอักษรให้เหมาะสมกับหน้าจอขนาดเล็กขึ้น */
+  }
+
+  .scroll-1 {
+    padding: 100px 0;
+    padding-left: 5%;
+  }
+
+  .grid {
+    padding: 1px 1px;
+  }
+
+  .col {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 0px;
+  }
+
+  .pt-20 {
+    padding: 1px 0px;
+    padding-top: 1px; 
+  }
+
+  .pl-10 {
+    padding: 1px 0px;
+    padding-left: 1px;
+  }
+  .btn-start {
+    background-color: white;
+    color: #4DC247;
+    border-radius: 50px;
+    width: 100px;
+    height: 5px;
+  }
+  
 }

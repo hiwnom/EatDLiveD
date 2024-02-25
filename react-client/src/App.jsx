@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { Landing } from './pages/landing'
+import { Landing } from './pages/Landing/landingpage'
 import { Auth } from './pages/auth'
 
 
