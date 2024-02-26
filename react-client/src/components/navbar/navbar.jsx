@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="navbar-start px-5">
       <img
               alt="LOGO"
-              src="./src/assets/Logo.svg"
+              src="./src/assets/logo eatDliveD.svg"
               width="10%"
       />
       </div>
@@ -16,7 +16,7 @@ export default function Navbar() {
                 <a href="https://www.leb2.org" className="btn btn-outline">ทดลองใช้</a>
             </div>
             <div className="flex-items">
-                <a className="btn btn-success">ลงชื่อเข้าใช้</a>
+                <a href="/login" className="btn btn-success">ลงชื่อเข้าใช้</a>
             </div>
         </div>
         
