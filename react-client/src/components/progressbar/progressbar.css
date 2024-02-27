@@ -1,0 +1,94 @@
+.progress-layout{
+    min-width: 475px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bolder;
+    z-index: 200;
+    color: white;
+}
+
+.progress-line{
+    position: absolute;
+    width: 455px;
+    height: 17px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-bar .fill-circle{
+    background-color: #28A745;
+}
+
+.circle-animate-1{
+    background: linear-gradient(to right, #28A745 50%, #ffffff 50%);
+    background-position: left bottom;
+    background-size: 200% 100%;
+    animation-name: fillbar1;
+    animation-duration: 0.9s;
+}
+
+.fill-line-1{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 29%;
+    height: 102%;
+    background-color: #28A745;
+    border: 1px solid #28A745;
+    animation-name: fillline1;
+    animation-duration: 2s;
+}
+
+.fill-line-2{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 70%;
+    height: 102%;
+    background-color: #28A745;
+    border: 1px solid #28A745;
+    animation-name: fillline2;
+    animation-duration: 2s;
+}
+
+.fill-line-3{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 102%;
+    background-color: #28A745;
+    border: 1px solid #28A745;
+}
+
+
+@keyframes fillbar1 {
+    from {background-position: right bottom;}
+    to {background-position: left bottom;
+    }
+}
+
+@keyframes fillline1 {
+    from {width: 0%;}
+    to {width: 29%;}
+}
+
+@keyframes fillline2 {
+    from {width: 40%;}
+    to {width: 70%;}
+}

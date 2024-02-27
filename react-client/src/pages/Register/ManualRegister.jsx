@@ -1,4 +1,5 @@
 import "./ManualRegister.css"
+import "../../components/progressbar/progressbar.css"
 
 function ManualRegister() {
   return (
@@ -8,7 +9,7 @@ function ManualRegister() {
             <div className="row-span-4 flex justify-center items-center">
                 <div className="regis-form-layout drop1">
                     <div className="regis-heading">SIGN UP</div>
-                    <form action="/">
+                    <form action="/accinfo">
                         <div className="mt-2 mb-5">
                             <div className="label">
                                 <span className="regis-label">Username</span>
@@ -46,13 +47,13 @@ function ManualRegister() {
                 </div>
             </div>
             <div className="row-span-1 flex justify-center items-center">
-                <div className="regis-progress-layout">
-                    <div className="flex justify-between regis-progress-bar">
-                        <div className="fill-bar">1</div>
+                <div className="progress-layout">
+                    <div className="flex justify-between progress-bar">
+                        <div className="circle-animate-1">1</div>
                         <div>2</div>
                         <div>3</div>
                     </div>
-                    <div className="regis-progress-line">
+                    <div className="progress-line">
                         <div className="fill-line-1"></div>
                     </div>
                 </div>
