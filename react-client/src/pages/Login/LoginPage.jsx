@@ -6,10 +6,10 @@ const LoginPage = () => {
       <div className="login-container">
         <div className="login-layout grid grid-cols-2">
             <div className="flex justify-center items-center max-xl:hidden">
-                <div className="login-image-layout"></div>
+                <div className="login-image-layout bounce"></div>
             </div>
             <div className="flex justify-center items-center max-xl:col-span-2 p-10">
-                <div className="login-form-layout drop1">
+                <div className="login-form-layout drop1 bounce">
                     <div className="login-logo"></div>
                     <form action="/">
                         <div className="mt-5 mb-8">

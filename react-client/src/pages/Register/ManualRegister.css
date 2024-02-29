@@ -9,6 +9,10 @@
     padding: 2%;
 }
 
+/* div{
+    border: 1px solid red;
+} */
+
 .regis-layout{
     width: 100%;
     height: 100%;
@@ -55,3 +59,20 @@
     color: black;
 }
 
+.bounce{
+    transform: scale(1);
+    animation-name: bounce-animation;
+    animation-duration: 0.2s;
+    
+}
+
+@keyframes bounce-animation {
+    from{transform: scale(0.96);}
+    to{transform: scale(1);}
+}
+
+/* @media only screen and (max-height: 820px) {
+    .regis-form-layout{
+        transform: scale(0.9);
+    }
+  } */

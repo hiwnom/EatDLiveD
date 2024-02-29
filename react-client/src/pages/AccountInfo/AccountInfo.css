@@ -136,3 +136,9 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+@media only screen and (min-height: 1100px) {
+    .acc-form-layout{
+        transform: scale(0.85);
+    }
+  }

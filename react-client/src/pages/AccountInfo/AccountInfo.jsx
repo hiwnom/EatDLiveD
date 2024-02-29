@@ -5,9 +5,9 @@ function AccountInfo() {
   return (
     <div>
         <div className="acc-container max-md:px-20 max-xl:px-20">
-            <div className="acc-layout grid grid-rows-5 grid-cols-1">
-                <div className="row-span-4 flex justify-center items-center">
-                    <div className="acc-form-layout drop1">
+            <div className="acc-layout grid grid-cols-1">
+                <div className="flex flex-col justify-center items-center">
+                    <div className="acc-form-layout drop1 bounce">
                         <div className="acc-heading my-3">Account infomation</div>
                         <div className="acc-description mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium quae voluptates doloremque explicabo tempora!</div>
                         <form action="/actinfo">
@@ -28,7 +28,7 @@ function AccountInfo() {
                                         <input type="input" name="lname" id="lname" placeholder="Last Name" data-theme="light" className="input input-bordered w-full" />
                                     </div>
                                 </div>
-                                <div className='col-span-2 max-lg:row-start-3 max-lg:col-span-6'>
+                                <div className='col-span-2 max-lg:row-start-3 max-lg:col-span-4'>
                                     <div className="acc-age-input">
                                         <div className="label">
                                             <span className="regis-label">Age</span>
@@ -36,7 +36,7 @@ function AccountInfo() {
                                         <input type="number" name="age" id="age" placeholder="Age" data-theme="light" className="input input-bordered w-full" />
                                     </div>
                                 </div>
-                                <div className='col-span-3 max-lg:row-start-3 max-lg:col-span-6'>
+                                <div className='col-span-3 max-lg:row-start-3 max-lg:col-span-8'>
                                     <div className="acc-gender-input grow">
                                         <div className="label">
                                             <span className="regis-label">Gender</span>
@@ -89,9 +89,7 @@ function AccountInfo() {
                             </div>
                         </form>
                     </div>
-                </div>
-                <div className="row-span-1 flex justify-center items-center">
-                    <div className="progress-layout">
+                    <div className="progress-layout mt-10">
                         <div className="flex justify-between progress-bar">
                             <div className="fill-circle">1</div>
                             <div className='circle-animate-1'>2</div>

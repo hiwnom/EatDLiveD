@@ -5,9 +5,9 @@ function ManualRegister() {
   return (
     <div>
       <div className="regis-container">
-        <div className="regis-layout grid grid-rows-5 grid-cols-1">
-            <div className="row-span-4 flex justify-center items-center">
-                <div className="regis-form-layout drop1">
+        <div className="regis-layout grid grid-cols-1">
+            <div className="flex flex-col justify-center items-center">
+                <div className="regis-form-layout drop1 bounce">
                     <div className="regis-heading">SIGN UP</div>
                     <form action="/accinfo">
                         <div className="mt-2 mb-5">
@@ -45,9 +45,7 @@ function ManualRegister() {
                         </div>
                     </form>
                 </div>
-            </div>
-            <div className="row-span-1 flex justify-center items-center">
-                <div className="progress-layout">
+                <div className="progress-layout mt-10">
                     <div className="flex justify-between progress-bar">
                         <div className="circle-animate-1">1</div>
                         <div>2</div>

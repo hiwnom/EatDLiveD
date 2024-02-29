@@ -14,14 +14,89 @@
     height: 100%;
 }
 
+.act-heading{
+    font-size: 36px;
+    color: #277723;
+    font-weight: bolder;
+}
+
 .act-form-layout{
     min-width: 520px;
-    width: 1125px;
-    height: 740px;
+    width: 600px;
+    height: 690px;
     background-color: white;
     border-radius: 45px;
     padding: 25px 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.act-form-layout form{
+    height: 100%;
+    width: 100%;
+}
+
+.act-form-grid{
+    height: 100%;
+    width: 100%;
+}
+
+.act-form-grid>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-btn-success{
+    font-size: 16px !important;
+    width: 410px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #28A745 !important;
+    color: white !important;
+    
+}
+
+.act-form-grid>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-selector{
+    width: 100%;
+    height: 70%;
+    border: 2px solid #c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.2s;
+
+}
+
+.act-selector:hover{
+    border: 2px solid #28A745;
+    background-color: rgb(228, 240, 228);
+}
+
+.act-selector:active{
+    transform: scale(0.9);
+}
+
+
+.act-selected{
+    border: 2px solid #28A745;
+    background-color: rgb(198, 240, 208);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
