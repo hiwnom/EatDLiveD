@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('lName')->after('id');
             $table->string('fName')->after('id');
-            $table->integer('activity')->after('heigth');
-            $table->string('gender')->after('heigth');
-            $table->integer('age')->after('heigth');
-
+            $table->integer('activity')->after('height');
+            $table->string('gender')->after('height');
+            $table->integer('age')->after('height');
+            $table->string('username')->after('id')->unique();
         });
     }
 

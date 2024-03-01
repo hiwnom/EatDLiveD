@@ -1,11 +1,39 @@
 import "./ActivityForm.css"
 import "../../components/progressbar/progressbar.css"
-import { useState } from "react"
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useState } from "react";
+import axios from 'axios';
 
 function ActivityForm() {
 
-    const [sel, setSel] = useState("act-0")
+    const location = useLocation();
 
+    const [formData, setFormData] = useState(location.state);
+    const [sel, setSel] = useState("0")
+
+    const handleChange= (event)=>{
+      setSel(event.target.id);
+      setFormData((prevData)=>({
+        ...prevData,
+        ["activity"]: sel
+      }));
+    }
+
+    const handleSubmit=async (event)=>{
+      event.preventDefault();
+      // setFormData((prevData)=>({
+      //   ...prevData,
+      //   ["activity"]: sel
+      // }));
+      console.log(formData);
+     
+      try {
+        const response = await axios.post('http://127.0.0.1:8000/api/register', formData);
+      } catch(error) {
+        console.log('Error sending req', error);
+      }
+
+    }
     
   return (
     <div>
@@ -15,30 +43,30 @@ function ActivityForm() {
               <div className="act-form-layout drop1 bounce">
                 <div className="act-heading">Activity</div>
                 <div className="act-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <form action="/">
+                <form onSubmit={handleSubmit}>
                   <div className="act-form-grid grid gird-cols-1">
                     <div>
-                      <div id="act-1" onClick={(e)=>{setSel(e.target.id)}} className={ sel == "act-1" ? "act-selected" : "act-selector"}>
+                      <div id="1" onClick={handleChange} className={ sel == "1" ? "act-selected" : "act-selector"}>
                         ไม่ได้ออกกำลังกาย หรือ นานๆทีออกกำลังกาย
                       </div>
                     </div>
                     <div>
-                      <div id="act-2" onClick={(e)=>{setSel(e.target.id)}} className={ sel == "act-2" ? "act-selected" : "act-selector"}>
+                      <div id="2" onClick={handleChange} className={ sel == "2" ? "act-selected" : "act-selector"}>
                         ออกกำลังกายหรือขยับร่างกาย ประมาณ 1 - 3 วันต่อสัปดาห์
                       </div>
                     </div>
                     <div>
-                      <div id="act-3" onClick={(e)=>{setSel(e.target.id)}} className={ sel == "act-3" ? "act-selected" : "act-selector"}>
+                      <div id="3" onClick={handleChange} className={ sel == "3" ? "act-selected" : "act-selector"}>
                         ออกกำลังกายหรือขยับร่างกาย ประมาณ 3 - 5 วันต่อสัปดาห์
                       </div>
                     </div>
                     <div>
-                      <div id="act-4" onClick={(e)=>{setSel(e.target.id)}} className={ sel == "act-4" ? "act-selected" : "act-selector"}>
+                      <div id="4" onClick={handleChange} className={ sel == "4" ? "act-selected" : "act-selector"}>
                         ออกกำลังกายหรือขยับร่างกาย ประมาณ 5 - 7 วันต่อสัปดาห์
                       </div>
                     </div>
                     <div>
-                      <div id="act-5" onClick={(e)=>{setSel(e.target.id)}} className={ sel == "act-5" ? "act-selected" : "act-selector"}>
+                      <div id="5" onClick={handleChange} className={ sel == "5" ? "act-selected" : "act-selector"}>
                         ออกกำลังกายหรือขยับร่างกายทุกวัน ช่วงเช้า ช่วงเย็น
                       </div>
                     </div>
