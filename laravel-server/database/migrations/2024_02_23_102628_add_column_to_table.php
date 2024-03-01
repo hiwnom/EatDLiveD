@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->double('heigth')->after('password');
-            $table->double('weigth')->after('password');
+            $table->double('height')->after('password');
+            $table->double('weight')->after('password');
         });
     }
 
