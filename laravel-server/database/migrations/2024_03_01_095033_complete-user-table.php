@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->double('height')->after('password');
-            $table->double('weight')->after('password');
+            $table->string('lName')->after('id');
+            $table->string('fName')->after('id');
+            $table->integer('activity')->after('height');
+            $table->string('gender')->after('height');
+            $table->integer('age')->after('height');
+            $table->string('username')->after('id')->unique();
         });
     }
 
@@ -22,8 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-        });
+        //
     }
 };

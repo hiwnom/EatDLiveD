@@ -14,16 +14,37 @@ class AuthController extends Controller
 
         // data validation  
         $request->validate([
-            "name" => "required",
+            "username" => "required",
             "email" => "required|email|unique:users",
-            "password" => "required|confirmed"       
+            "password" => "required|confirmed",
+            "fName" => "required",
+            "lName" => "required",
+            "weight" => "required",     
+            "height" => "required",     
+            "age" => "required",     
+            "gender" => "required",
+            "activity" => "required"     
         ]);
-        
+
         // Author model
         User::create([
-            "name" => $request->name,
+            "username" => $request->username,
             "email" => $request->email,
-            "password" => Hash::make($request->password)
+            "password" => Hash::make($request->password),
+            // "fName" => 'kenTest',
+            // "lName" => 'kt',
+            // "weight" => '67.4',
+            // "height" => '170',
+            // "age" => '16',
+            // "gender" => 'male',
+            // "activity" => '1'
+            "fName" => $request->fName,
+            "lName" => $request->lName,
+            "weight" => $request->weight,
+            "height" => $request->height,
+            "age" => $request->age,
+            "gender" => $request->gender,
+            "activity" => $request->activity
         ]);
 
         // Response
