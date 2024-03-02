@@ -36,7 +36,7 @@ function ManualRegister() {
                         </div>
                         <div className="form-control">
                             <label className="cursor-pointer label justify-start gap-2">
-                                <input type="checkbox" className="checkbox checkbox-success" />
+                                <input type="checkbox" className="checkbox border-neutral-400 [--chkbg:theme(colors.green.600)] [--chkfg:white]" />
                                 <span className="regis-label">i agree with</span>
                             </label>
                         </div>

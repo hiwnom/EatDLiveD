@@ -26,7 +26,7 @@
 
 .acc-form-layout{
     min-width: 520px;
-    width: 1125px;
+    /* width: 1125px; */
     height: 740px;
     background-color: white;
     border-radius: 45px;
@@ -79,22 +79,94 @@
     max-width: 165px;
 }
 
+.acc-gender-input .acc-select-color{
+    color: #ccc!important;
+}
+
 .acc-fat-input{
-    width: 324px;
+    max-width: 324px;
     height: 210px;
-    background-color: rgb(239, 233, 233);
+    border: 1px solid rgb(210,212,215);
+    border-radius: 7px;
+    padding: 1%;
+    padding-left: 4%;
 }
 
 .acc-background-input{
-    width: 310px;
+    max-width: 310px;
     height: 210px;
-    background-color: rgb(239, 233, 233);
+    border: 1px solid rgb(210,212,215);
+    border-radius: 7px;
+}
+
+.acc-background-input .background-frame{
+    width: 200px;
+    height: 160px;
+    border: 3px solid #dffade;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+}   
+
+.acc-background-input .background-frame:hover{
+    background-color: #f6f6f6;
+}
+
+.acc-background-input .background-frame img{
+    width: 55px;
+    height: 55px;
 }
 
 .acc-profile-input{
     width: 185px;
     height: 210px;
-    background-color: rgb(239, 233, 233);
+    border: 1px solid rgb(210,212,215);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.acc-profile-input .image-frame{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #dffade;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acc-profile-input .image-frame:hover{
+    background-color: #f6f6f6;
+
+}
+
+.acc-background-input .image-frame img{
+    width: 55px;
+    height: 55px;   
+}
+
+.acc-upload-image input[type="file"] {
+    display: none;
+}
+.acc-upload-image .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+.acc-upload-image .custom-file-upload:hover{
+    border: 1px solid #277723;
+    color: black;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -111,7 +183,7 @@
     }
     
     .acc-fat-input{
-        width: 100%;
+        max-width: 100%;
         
     }
     
@@ -125,6 +197,10 @@
 
     }
 }
+
+/* div{
+    border: 1px solid red;
+} */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .acc-form-layout::-webkit-scrollbar {

@@ -1,0 +1,46 @@
+.bg-sel-content{
+    min-width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.sel-preview-background{
+    width: 220px;
+    height: 170px;
+    border: 3px solid #dffade;
+    border-radius: 5px;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sel-group-background{
+    padding: 3%;
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sel-group-background>*{
+    width: 150px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sel-group-background>*:hover{
+    border: 1px solid #277723;
+}
