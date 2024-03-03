@@ -161,7 +161,7 @@ function AccountInfo() {
                                     </div>
                                     <div className="acc-background-input grid grid-cols-4">
                                         <div onClick={() => (setSelBg({isSel : true, backgroundId : SelBg.backgroundId}))} className="background-frame col-span-3 m-auto max-xl:col-span-4">
-                                            {SelBg.backgroundId != "background00" ? background_img[SelBg.backgroundId] : <img src={img_icon} alt="img icon" />}
+                                            {SelBg.backgroundId != "background00" ?  <img src={background_img[SelBg.backgroundId]} alt={SelBg.backgroundId} className='sel-background-frame' /> : <img src={img_icon} alt="img icon" className='icon-img' />}
                                         </div>
                                         <div className='col-span-1 my-auto max-xl:hidden'>
                                             <div onClick={() => (setSelBg({isSel : true, backgroundId : SelBg.backgroundId}))} className='cursor-pointer hover:text-black' >
@@ -180,10 +180,10 @@ function AccountInfo() {
                                         </div>
                                         <div className="acc-profile-input">
                                             <div onClick={() => (setSel({isSel : true, avatarId : Sel.avatarId}))} className="image-frame my-2">
-                                                {Sel.avatarId != "avatar00" ? avatar_img[Sel.avatarId] : <img src={img_icon} alt="img icon" />}
+                                                {Sel.avatarId != "avatar00" ? <img src={avatar_img[Sel.avatarId] } alt={Sel.avatarId} className='acc-avatar-frame'/> : <img src={img_icon} alt="img icon" />}
                                                 
                                             </div>
-                                            <div>Select Avatar</div>
+                                            <div onClick={() => (setSel({isSel : true, avatarId : Sel.avatarId}))} className='hover:text-black cursor-pointer'>Select Avatar</div>
                                             <div>or</div>
                                             <div className='acc-upload-image'>
                                                 <label htmlFor="file-upload" className="custom-file-upload">
@@ -196,7 +196,7 @@ function AccountInfo() {
                                 </div>
 
                                 <div className='col-span-12 mt-auto max-lg:row-start-8'>
-                                    <div className="mt-7 mb-8 mx-auto">
+                                    <div className="mt-7 mb-5 mx-auto">
                                         <button data-theme="light" className="btn acc-btn-success">Next</button>
                                     </div>
                                 </div>

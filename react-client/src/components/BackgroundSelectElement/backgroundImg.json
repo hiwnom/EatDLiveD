@@ -1,12 +1,12 @@
     {
     "background_img" : 
         {
-            "background01" : "background1",
-            "background02" : "background2",
-            "background03" : "background3",
-            "background04" : "background4",
-            "background05" : "background5",
-            "background06" : "background6"
+            "background01" : "src/assets/background/Background 1.jpg",
+            "background02" : "src/assets/background/Background 2.jpg",
+            "background03" : "src/assets/background/Background 3.jpg",
+            "background04" : "src/assets/background/Background 4.jpg",
+            "background05" : "src/assets/background/Background 5.jpg",
+            "background06" : "src/assets/background/Background 6.jpg"
         }
 
 }

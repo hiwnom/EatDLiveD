@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.sel-avatar-frame{
+    border-radius: 50%;
+}
+
 .sel-preview-layout{
     min-width: 230px;
 }

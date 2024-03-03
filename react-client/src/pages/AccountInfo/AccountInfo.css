@@ -116,7 +116,7 @@
     background-color: #f6f6f6;
 }
 
-.acc-background-input .background-frame img{
+.acc-background-input .background-frame .icon-img{
     width: 55px;
     height: 55px;
 }
@@ -130,6 +130,10 @@
     flex-direction: column;
     align-items: center;
     
+}
+
+.acc-avatar-frame{
+    border-radius: 50%;
 }
 
 .acc-profile-input .image-frame{

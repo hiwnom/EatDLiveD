@@ -3,6 +3,7 @@ import img_icon from "../../assets/image-icon.svg"
 import { useState, useEffect } from "react"
 import avatarImg from "./avatarImg.json"
 
+
 // eslint-disable-next-line react/prop-types
 function SelectContainer({onValueSelect, value1, value2}) {
   const avatar_img = avatarImg["avatar_img"]
@@ -24,7 +25,7 @@ function SelectContainer({onValueSelect, value1, value2}) {
                     <div className="sel-preview-layout max-lg:m-auto">
                         <div className="sel-heading text-center">Select Avatar</div>
                         <div className="sel-preview-avatar mx-auto my-8 ">
-                            {avatarId != "avatar00" ? avatar_img[avatarId] : <img src={img_icon} alt="img icon" />}
+                            {avatarId != "avatar00" ? <img src={avatar_img[avatarId]} alt={avatarId} className="sel-avatar-frame" /> : <img src={img_icon} alt="img icon" />}
                             
                             
                         </div>  
@@ -40,15 +41,19 @@ function SelectContainer({onValueSelect, value1, value2}) {
                 </div>
                 <div className="col-span-7 flex justify-center items-center max-lg:col-span-12">
                     <div className="sel-group-avatar grid grid-cols-3">
-                        <div id="avatar01" onClick={(e) => setAvatarID(e.target.id)}>avatar1</div>
-                        <div id="avatar02" onClick={(e) => setAvatarID(e.target.id)}>avatar2</div>
-                        <div id="avatar03" onClick={(e) => setAvatarID(e.target.id)}>avatar3</div>
+                        <div id="avatar01" onClick={() => setAvatarID("avatar01")}>
+                          <img src={avatar_img["avatar01"]} alt="avatar1" className="sel-avatar-frame"/>
+                        </div>
+                        <div id="avatar02" onClick={() => setAvatarID("avatar02")}>
+                          <img src={avatar_img["avatar02"]} alt="avatar1" className="sel-avatar-frame"/>
+                        </div>
+                        {/* <div id="avatar03" onClick={(e) => setAvatarID(e.target.id)}>avatar3</div>
                         <div id="avatar04" onClick={(e) => setAvatarID(e.target.id)}>avatar4</div>
                         <div id="avatar05" onClick={(e) => setAvatarID(e.target.id)}>avatar5</div>
                         <div id="avatar06" onClick={(e) => setAvatarID(e.target.id)}>avatar6</div>
                         <div id="avatar06" onClick={(e) => setAvatarID(e.target.id)}>avatar6</div>
                         <div id="avatar06" onClick={(e) => setAvatarID(e.target.id)}>avatar6</div>
-                        <div id="avatar06" onClick={(e) => setAvatarID(e.target.id)}>avatar6</div>
+                        <div id="avatar06" onClick={(e) => setAvatarID(e.target.id)}>avatar6</div> */}
 
                     </div>
                 </div>

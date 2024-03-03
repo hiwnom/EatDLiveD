@@ -26,7 +26,7 @@ function BgSelectContainer({onValueSelect, value1, value2}) {
                     <div className="sel-preview-layout max-lg:m-auto">
                         <div className="sel-heading text-center">Select Background</div>
                         <div className="sel-preview-background mx-auto my-8 ">
-                            {backgroundId != "background00" ? background_img[backgroundId] : <img src={img_icon} alt="img icon" />}
+                            {backgroundId != "background00" ?  <img src={background_img[backgroundId]} alt={backgroundId} className="sel-background-frame" /> : <img src={img_icon} alt="img icon" />}
                             
                             
                         </div>  
@@ -42,14 +42,24 @@ function BgSelectContainer({onValueSelect, value1, value2}) {
                 </div>
                 <div className="col-span-7 flex justify-center items-center max-lg:col-span-12">
                     <div className="sel-group-background grid grid-cols-3 max-lg:grid-cols-2">
-                        <div id="background01" onClick={(e) => setbackgroundID(e.target.id)}>background1</div>
-                        <div id="background02" onClick={(e) => setbackgroundID(e.target.id)}>background2</div>
-                        <div id="background03" onClick={(e) => setbackgroundID(e.target.id)}>background3</div>
-                        <div id="background04" onClick={(e) => setbackgroundID(e.target.id)}>background4</div>
-                        <div id="background05" onClick={(e) => setbackgroundID(e.target.id)}>background5</div>
-                        <div id="background06" onClick={(e) => setbackgroundID(e.target.id)}>background6</div>
-                        <div id="background06" onClick={(e) => setbackgroundID(e.target.id)}>background6</div>
-                        <div id="background06" onClick={(e) => setbackgroundID(e.target.id)}>background6</div>
+                        <div id="background01" onClick={() => setbackgroundID("background01")}>
+                            <img src={background_img["background01"]} alt="background01" className="sel-background-frame" />
+                        </div>
+                        <div id="background02" onClick={() => setbackgroundID("background02")}>
+                            <img src={background_img["background02"]} alt="background02" className="sel-background-frame" />
+                        </div>
+                        <div id="background03" onClick={() => setbackgroundID("background03")}>
+                            <img src={background_img["background03"]} alt="background03" className="sel-background-frame" />
+                        </div>
+                        <div id="background04" onClick={() => setbackgroundID("background04")}>
+                            <img src={background_img["background04"]} alt="background04" className="sel-background-frame" />
+                        </div>
+                        <div id="background05" onClick={() => setbackgroundID("background05")}>
+                            <img src={background_img["background05"]} alt="background05" className="sel-background-frame" />
+                        </div>
+                        <div id="background06" onClick={() => setbackgroundID("background06")}>
+                            <img src={background_img["background06"]} alt="background06" className="sel-background-frame" />
+                        </div>
                     </div>
                 </div>
             </div>
