@@ -1,0 +1,13 @@
+{
+    "bodyfat_img" : 
+        {
+            "fat01" : "src/assets/bodyfat/bodyfat1.svg",
+            "fat02" : "src/assets/bodyfat/bodyfat2.svg",
+            "fat03" : "src/assets/bodyfat/bodyfat3.svg",
+            "fat04" : "src/assets/bodyfat/bodyfat4.svg",
+            "fat05" : "src/assets/bodyfat/bodyfat5.svg",
+            "fat06" : "src/assets/bodyfat/bodyfat6.svg"
+
+        }
+
+}

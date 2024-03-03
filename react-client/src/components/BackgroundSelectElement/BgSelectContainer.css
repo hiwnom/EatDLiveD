@@ -45,7 +45,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
 
+}
+
+.sel-group-background>*:active{
+    transform: scale(0.96);
 }
 
 .sel-group-background>*:hover{

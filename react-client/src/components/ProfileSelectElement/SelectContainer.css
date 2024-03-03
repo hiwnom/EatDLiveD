@@ -90,7 +90,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
 
+}
+
+.sel-group-avatar>*:active{
+    transform: scale(0.95);
 }
 
 .sel-group-avatar>*:hover{

@@ -2,6 +2,7 @@ import './AccountInfo.css'
 import "../../components/progressbar/progressbar.css"
 import avatarImg from "../../components/ProfileSelectElement/avatarImg.json"
 import backgroundImg from "../../components/BackgroundSelectElement/backgroundImg.json"
+import bodyfatImg from "./bodyfatImg.json"
 import img_icon from "../../assets/image-icon.svg"
 import SelectContainer from '../../components/ProfileSelectElement/SelectContainer'
 import BgSelectContainer from '../../components/BackgroundSelectElement/BgSelectContainer'
@@ -12,6 +13,7 @@ function AccountInfo() {
 
   const avatar_img = avatarImg["avatar_img"]
   const background_img = backgroundImg["background_img"]
+  const bodyfat_img = bodyfatImg["bodyfat_img"]
 
   const [Sel, setSel] = useState({isSel : false, avatarId : "avatar00"})
   const [SelBg, setSelBg] = useState({isSel : false, backgroundId : "background00"})
@@ -149,9 +151,8 @@ function AccountInfo() {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className='flex justify-center items-center flex-col'>
-                                            <img src={img_icon} alt="img icon" />
-                                            <p>{fat}</p>
+                                        <div className='flex justify-center items-center flex-col acc-fat-frame'>
+                                            <img src={bodyfat_img[fat]} alt="fat img" />
                                         </div>
                                     </div>
                                 </div>
